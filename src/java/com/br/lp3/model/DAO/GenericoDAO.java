@@ -11,12 +11,12 @@ import java.util.List;
  *
  * @author 31165737
  */
-public interface GenericoDAO 
+public interface GenericoDAO <T>
 {
     //CRUD
-    public void Insert(Object object);
-    public List<Object> read();
-    public boolean update(Object object);
-    public boolean remove(Object object);
+    public void Insert(T t);
+    public List<T> read();
+    public boolean update(T t);
+    public boolean remove(T t);
     
 }
