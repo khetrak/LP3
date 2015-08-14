@@ -37,10 +37,14 @@ public class FrontController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             
-            if(command.startsWith("login")){
+            if(command.startsWith("login"))
+            {
                 
-                if(command.endsWith("login")){
+                if(command.endsWith("login"))
+                {
                     //AÇÕES DE LOGIN
+                    LoginManager lm = new LoginManager(username,password);
+                    boolean resultado = lm.authorize();
                 }
             }
             
