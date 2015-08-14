@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.br.lp3.controller;
+package com.br.lp3.model.DAO;
 
 /**
  *
  * @author 31165737
  */
-public class LoginManager 
-{
-    public static boolean authorize(String username,String password)
-    {
-        return ( "cacique".equals(username) && "123".equals(password) ) ;
-    }  
+public class UserDao {
+    
 }
